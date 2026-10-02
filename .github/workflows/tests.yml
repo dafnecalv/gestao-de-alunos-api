@@ -1,6 +1,7 @@
 name: Testes de API
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
   pull_request:
@@ -53,4 +54,4 @@ jobs:
           done
 
       - name: Executar testes
-        run: npm run test:prova
+        run: npm test
